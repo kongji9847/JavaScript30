@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url('./background.jpg') bottom center;
+  background: url('./background.jpg') bottom center;    /* background-image , background-position */
   background-size: cover;
 }
 
@@ -11,10 +11,10 @@ body,html {
 }
 
 .keys {
-  display: flex;
-  flex: 1;
-  min-height: 100vh;
-  align-items: center;
+  display: flex;                /* key 컨테이너에 flex 적용(flex container)*/
+  flex: 1;                      /* flex-grow: 1 -> 모든 키들에게 균등하게 분배*/
+  min-height: 100vh;            /* vh -> 1/100 view height => if view가 900px이면 1vh = 9px */
+  align-items: center;          /* 키들의 세로 위치(주 방향과 수직 방향) */
   justify-content: center;
 }
 
@@ -24,7 +24,7 @@ body,html {
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
-  transition: all .07s ease;
+  transition: all .07s ease;          /* 애니메이션 효과 기타 설정: transition-property(트랜지션을 적용해야 하는 css속성), transition-duration, transition-timing-function(느낌) */
   width: 10rem;
   text-align: center;
   color: white;
@@ -33,7 +33,7 @@ body,html {
 }
 
 .playing {
-  transform: scale(1.1);
+  transform: scale(1.1);              /* 애니메이션 효과 자체: scale(숫자) 크기 변화하는 애니메이션*/
   border-color: #ffc600;
   box-shadow: 0 0 1rem #ffc600;
 }
